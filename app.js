@@ -51,6 +51,18 @@ app.get('/contact', (req, res) => {
     res.render('contact', { state, head});
     console.log('contact')
   });
+  app.get('/product', (req, res) => {
+    state={product : true}
+    head={title:"Product - Week 1"}
+    res.render('product', { state, head});
+    console.log('product')
+  });
+  app.get('/about', (req, res) => {
+    state={about : true}
+    head={title:"About - Week 1"}
+    res.render('about', { state, head});
+    console.log('about')
+  });
 
 
 // Start the server
